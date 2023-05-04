@@ -11,11 +11,10 @@
         <div class="header">
             <a href="index.html"><img src="media/logo.png"></a>
             <div>
-                <a id="current" href="index.html"><p>Innovation Station</p></a>
-                <a href="overview.html"><p>Overzicht</p></a>
-                <a href="404.html"><p>Up to date</p></a>
-                <a href="405.html"><p>Who knows</p></a>
-                <a href="about.html"><p>Over Ons</p></a>
+                <a href="index.html"><p>Start</p></a>
+                <a href="overview.html"><p>Projecten</p></a>
+                <a id="current" href="newProblem.html"><p>Insturen</p></a>
+                <a href="about.html" style="float: right;"><p>Uitleg</p></a>
             </div>
         </div>
 
@@ -23,7 +22,7 @@
             <div class="section">
                 <form action="https://formsubmit.co/f077debbec8e84facd0d4c9176d0204e" method="POST">
                     <label class="form-title" for="categorie">Categorie</label>
-                        <input type="radio" id="interventie" name="categorie" value="interventie">
+                        <input type="radio" id="interventie" name="categorie" value="interventie" required>
                         <label for="interventie">Verpleegkundige interventie</label><br>
                         <input type="radio" id="communicatie" name="categorie" value="communicatie">
                         <label for="communicatie">Communicatie</label><br>
@@ -35,10 +34,14 @@
                         <label for="anders">Anders</label><br>
                         <br>
 
-<!-- set max characters in js-->
                     <div>
-                        <label class="form-title"  for="probleem">Beschrijf het probleem bondig en duidelijk: </label>
+                        <label class="form-title"  for="probleem">Beschrijf het probleem eerst kort en bondig:</label>
                         <textarea class="form-field" name="probleem" type="text" placeholder="Maximaal 255 tekens" required maxlength="255"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <label class="form-title"  for="probleem-lang">Beschrijf het probleem nu uitgebreid en zo duidelijk mogelijk:</label>
+                        <textarea class="form-field" id="form-field-long" name="probleem-lang" type="text" placeholder="Maximaal 1055 tekens" required maxlength="1055"></textarea>
                     </div>
                     <br>
                     <div class="form-check">

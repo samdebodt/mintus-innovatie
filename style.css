@@ -5,12 +5,14 @@ body {
 
 /* HEADER STYLE */
 .header {
-    background-color: #1E6E99;
+    background-color: #1C6EAF;
     display: block;
     height: 10vh;
 }
 .header img {
     height: 10vh;
+    width: 10vw;
+    object-fit: cover;
     display: block;
     position: absolute;
     top: 0;
@@ -24,25 +26,28 @@ body {
     height: 10vh;
     top: 0;
     right: 0;
-    width: 82vw;
+    width: 88vw;
     margin: 0;
     padding:0;
 }
 .header div a {
-    display: inline-block;
+    display: block;
+    float: left;
     height: 8vh;
-    width: 14vw;
+    width: 16vw;
     text-align: center;
     margin: 1vh;
     padding: 0;
+    font-size: 1.5em;
     font-family: monospace;
+    font-weight: 600;
     color: #000000;
 }
 .header div a p {
-    padding-top: 1.2vh;
+    margin-top: 2.4vh;
 }
 .header div a:hover {
-    background-color: #187795;
+    background-color: #1F868E;
     color: #CDC6AE;
     text-decoration: underline;
 }
@@ -54,7 +59,7 @@ body {
 
 /* GENERAL CONTENT STYLE */
 .content {
-    background-color: #EDE7E3;
+    background-color: #DEFCFF;
     height: 90vh;
     padding: 0;
     margin: 0;
@@ -106,9 +111,9 @@ a {
 
 /* INDEX CONTENT */
 #idea, #problem {
-    color: #EDE7E3;
+    color: #FDF7F3;
     background-color: #FFA62B;
-    text-shadow: 2px 2px 8px #489FB5;
+    text-shadow: 3px 3px 4px #085F85;
     text-align: center;
     text-decoration: underline 0.5;
     display: block;
@@ -122,6 +127,7 @@ a {
     background-color: #F6C787;
     color: #16697A;
     text-decoration: underline;
+    text-shadow: 3px 3px 4px #F6C787;
     border-color: #FFA62B;
 }
 #idea p, #problem p {
@@ -134,59 +140,49 @@ a {
     padding: 0 3vh 0 3vh;
     margin: 1.2vh;
     text-align: center;
-    color: #000000;
+    color: #B8D4D8;
     font-family: sans-serif;
 }
-#first {
-    background-color: #ffec86;
-    border: 2px #1E6E99 ridge;
+#first, #second, #third {
+    background-color: #1C6EAF;
+    /*border: 2px #1E6E99 ridge;*/
     box-sizing: border-box;
     border-radius: 1.5vh;
-    width: 30vw;
-    height: 5vh;
-    margin: 0 1vw 0 1vw;
+    width: 26vw;
+    height: 25vh;
+    margin: 0 3vw 0 3vw;
 }
-#second {
-    background-color: #e1e1e1;
-    border: 2px #1E6E99 ridge;
-    box-sizing: border-box;
-    border-radius: 1.5vh;
-    width: fit-content;
-    width: 30vw;
-    height: 5vh;
-    margin: 0 1vw 0 1vw;
+#first:hover , #second:hover , #third:hover {
+    text-decoration: underline;
+    color: #B8D4D8;
+    background-color: #004E8F;
 }
-#third {
-    background-color: #e7c39d;
-    border: 2px #1E6E99 ridge;
-    box-sizing: border-box;
-    border-radius: 1.5vh;
-    width: 30vw;
-    height: 5vh;
-    margin: 0 1vw 0 1vw;
+.winner {
+    width: 95vw;
+    margin: 0 auto 0 auto;
+    height: 40vh;
 }
 .winner p {
     text-align: center;
-    font-family: cursive;
     font-size: 140%;
-    padding: 3vh 10vw 1vh 10vw;
-    width: 30vw;
+    margin: 0;
+    padding: 1vh 3vw 1vh 3vw;
+    width: 50vw;
+    display: block;
     float: left;
     text-decoration: underline #ffd700;
 }
 #monthly-image {
-    width: auto;
-    height: 40vh;
+    width: 40vw;
+    height: 30vh;
+    display: block;
+    object-fit: contain;
     float: right;
+    margin: 0;
+    padding: 0;
 }
 #monthly-title {
-    margin-top: 4vh;
-}
-#monthly-info {
-    margin-top: 2vh;
-    padding-top: 1vh;
-    text-decoration: none;
-    font-size: 100%;
+    margin-top: 0;
 }
 
 /* FORM CONTENT */
@@ -201,6 +197,9 @@ a {
     width: 100%;
     font-size: 150%;
 }
+#form-field-long {
+    height: 20vh;
+}
 .form-sumbit>input {
     width: 20vw;
     height: 5vh;
@@ -211,11 +210,12 @@ a {
 
 /* OTHER CONTENT */
 #mild-title {
-    font-weight: bolder;
+    font-weight: 600;
     font-size: 120%;
+    font-family: sans-serif;
 }
 #video {
-    width: 50%;
+    width: 45vw;
     height: auto;
     display: block;
     float: right;
@@ -225,7 +225,22 @@ a {
     font-weight: bolder;
     font-size: 120%;
     float: left;
-    width: auto;
+    width: 45vw;
+}
+#chart {
+    text-align: center;
+}
+#chart>p {
+    margin: 1vh auto;
+}
+.discussion>p, .discussion>div>p {
+    margin: 0;
+}
+.discussion>h3, .discussion>div>h4 {
+    margin-bottom: 0;
+}
+.discussion>div>h4 {
+    margin-top: 1vh;
 }
 .overview-list>img {
     height: 30vh;
@@ -235,6 +250,19 @@ a {
     float: left;
     margin-right: 2vw;
     border-radius: 1vw;
+}
+.overview-list>ul>li {
+    list-style: none;
+    margin: 1.3vh;
+}
+.overview-list>ul>li>a {
+    font-family: sans-serif;
+    color: #000000;
+    padding: 0.5vh;
+}
+.overview-list>ul>li>a:hover {
+    background-color: #1F868E;
+    color: #CDC6AE;
 }
 
 /* MOBILE ADAPTION
