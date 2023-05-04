@@ -1,0 +1,23 @@
+/* TEAM */
+Company: Arteveldehogeschool
+Website: http://www.arteveldehs.be
+Twitter: @ArteveldeHS
+Email: info [at] arteveldehs [dot] be
+Location: Ghent, Belgium
+-
+Design+HTML5+CSS3+JavaScript+PHP: Sam De Bodt - Ghent
+Website: http://www.github.com/samdebodt
+Location: Ghent, Belgium
+
+/* THANKS */
+W3C: World Wide Web Consortium
+Website: http://www.w3.org
+-
+Pexels: Free Stock Images and Videos
+Website: https://www.pexels.com/
+
+/* SITE */
+Last update: April 24, 2023
+Standard: HTML5, CSS3
+Features: FormSubmit
+Software: Visual Studio Code, Github Desktop, Github Sites
